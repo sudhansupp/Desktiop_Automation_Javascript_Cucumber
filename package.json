@@ -1,0 +1,31 @@
+{
+  "name": "extendagautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-report": "node report-config.js",
+    "test-only": "cucumber-js --publish --tags @garlic -f json:report/cucumber_report.json -f @cucumber/pretty-formatter && npm run generate-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^9.3.0",
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "chai": "^4.3.4",
+    "cucumber-html-reporter": "^7.1.1",
+    "selenium-appium": "^1.0.2",
+    "selenium-webdriver": "^4.11.1"
+  },
+  "devDependencies": {
+    "cucumber-html-reporter": "^7.1.1",
+    "eslint": "^8.47.0",
+    "eslint-config-semistandard": "^17.0.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.1"
+  }
+}
